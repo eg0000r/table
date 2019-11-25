@@ -1,22 +1,107 @@
-.App {
+body {
+  user-select: none;
+}
+
+table.master {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td.groupNumber {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+div.hint {
+  position: absolute;
+  left: 18vw;
+  top: 8vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+div.key {
+  position: absolute;
+  left: 30vw;
+  top: 8vw;
+}
+
+div.element {
+  border-style: solid;
+  border-width: medium;
+  width: 4.5vw;
+  height: 4.5vw;
+  opacity: 0.7;
+}
+
+div.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+div.element:hover {
+  opacity: 1;
+}
+
+div.element:hover div.dropdownContent {
+  opacity: 0.8;
+  display: block;
+}
+
+div.sub {
+  position: relative;
+  right: -3.5vw;
+  bottom: 1vw;
+  font-size: 0.9vw;
+  font-weight: bolder;
   color: white;
+  text-align: center;
+  width: 1.2vw;
+  height: 1.2vw
 }
 
-.App-link {
-  color: #09d3ac;
+p.short {
+  font-size: 1.1vw;
+  font-weight: bold;
+}
+
+p.name {
+  font-size: 0.65vw;
+}
+
+p.mass {
+  font-size: 0.7vw;
+}
+
+p.number {
+  font-size: 0.9vw;
+}
+
+p.name, p.mass, p.number, p.short {
+  margin: 0;
+  padding: 0;
+}
+
+p.shortLarge {
+  font-size: 2.2vw;
+  font-weight: bold;
+}
+
+p.nameLarge {
+  font-size: 1.3vw;
+}
+
+p.massLarge {
+  font-size: 1.4vw;
+}
+
+p.numberLarge {
+  font-size: 1.8vw;
+}
+
+p.nameLarge, p.massLarge, p.numberLarge, p.shortLarge {
+  margin: 0;
+  padding: 0;
 }
